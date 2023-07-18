@@ -1,0 +1,29 @@
+.testimonial_card {
+  text-align: center;
+  width: 536px;
+  height: 748px;
+  background: var(--navy);
+  box-shadow: 0px 0px 20px #19293A80;
+  border-radius: 10px;
+  color: white;
+
+}
+
+.testimonial_card__quote {
+  font-size: 30px;
+  line-height: 45px;
+
+}
+
+.testimonial-card__name {
+  font-size: 30px;
+
+}
+
+.testimonial-card__job {
+  font-size: 30px;
+}
+
+.testimonial_card__image {
+  font-size: 30px;
+}
