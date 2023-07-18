@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image'
 import styles from '@/components/Testimonials/Testimonials.module.css'
+import Title from '../Title/Title';
 
 const Testimonials: React.FC = () => {
   const [data, setData] = useState<any>(null);
@@ -23,7 +24,7 @@ const Testimonials: React.FC = () => {
     <>
       {data ? (
         <div>
-          <h2>Kind words from our clients</h2>
+         <Title firstLine="Kind words" secondLine="from our clients" />
           {data.testimonials.map((testimonial: any) => (
             <div className={styles.testimonial_card} key={testimonial.id}>
               <p className={styles.testimonial_card__quote}>{testimonial.quote}</p>

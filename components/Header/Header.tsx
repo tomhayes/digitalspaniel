@@ -5,18 +5,24 @@ import styles from '@/styles/Home.module.css'
 const Header: React.FC = () => {
   return (
     <div>
-      <h1>Header</h1>
-
-      <div className={styles.center}>
+      <div>
           <Image
             className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
+            src="/logo.png"
+            alt="Digital Spaniel"
+            width={197}
+            height={90}
             priority
           />
         </div>
+
+        <ul>
+          <li>Services</li>
+          <li>Work</li>
+          <li>About</li>
+          <li>Blog</li>
+          <li>Contact</li>
+        </ul>
     </div>
   );
 };

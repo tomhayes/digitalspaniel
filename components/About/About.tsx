@@ -1,10 +1,11 @@
 import React from 'react';
+import Title from '../Title/Title';
 
 const About: React.FC = () => {
   return (
-    <div>
-      <h1>About</h1>
-    </div>
+    <>
+      <Title firstLine="What are" secondLine="we all about?" />
+    </>
   );
 };
 
