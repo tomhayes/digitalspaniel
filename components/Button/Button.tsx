@@ -1,4 +1,6 @@
 import React, { FC } from 'react';
+import styles from './Button.module.scss'
+
 
 interface ButtonProps {
   text: string;
@@ -7,7 +9,7 @@ interface ButtonProps {
 
 const Title: FC<ButtonProps> = ({ text, url }) => {
   return (
-      <a href={url}>{text}</a>
+      <a className={styles.button} href={url}>{text}</a>
   );
 };
 
