@@ -2,20 +2,29 @@ import React from 'react';
 import Image from 'next/image'
 import Title from '../Title/Title'
 import Button from '../Button/Button'
+import styles from './Footer.module.scss'
+import InstagramIcon from '../Socials/instagram'
+import FacebookIcon from '../Socials/facebook'
+import LinkedinIcon from '../Socials/linkedin'
+import TwitterIcon from '../Socials/twitter'
 
 const Footer: React.FC = () => {
 
   let year = new Date().getFullYear()
 
   return (
-    <>
-    <div>
+
+    <div className={styles.footer}>
+    <div className={styles.footer__inner}>
+
+    <div className={styles.footer__main}>
       <Title firstLine="We're a brand's" secondLine="best friend" />
 
       <Button text="Let's talk" url="#" />
+
     </div>
-    <div>
-      <div>
+    <div className={styles.footer__menus}>
+      <div className={styles.footer__menus__menu}>
         <h3>Explore</h3>
         <ul>
           <li>Services</li>
@@ -25,7 +34,7 @@ const Footer: React.FC = () => {
           <li>Careers</li>
         </ul>
       </div>
-      <div>
+      <div className={styles.footer__menus__menu}>
         <h3>Services</h3>
         <ul>
           <li>Brand</li>
@@ -33,61 +42,30 @@ const Footer: React.FC = () => {
           <li>Marketing</li>
         </ul>
       </div>
-      <div>
+      <div className={styles.footer__menus__menu}>
         <h3>Questions?</h3>
-        <div>
+        <div className={styles.footer__contact}>
           <h4>Call Us</h4>
-          <a>0121 345 678</a>
+          <a href="tel:0121 345 678">0121 345 678</a>
         </div>
-        <div>
+        <div className={styles.footer__contact}>
           <h4>Email Us</h4>
-          <a>info@digitalspaniel.co.uk</a>
+          <a href="mailto:info@digitalspaniel.co.uk">info@digitalspaniel.co.uk</a>
         </div>
       </div>
     </div>
 
-    <div>
+    <div className={styles.footer__bottom}>
       <p>Copyright &copy; Digital Spaniel { year }. All rights reserved.</p> 
-      <ul>
-        <li>         
-          <Image
-            // className={styles.logo}
-            src="/facebook.svg"
-            alt="Digital Spaniel"
-            width={17}
-            height={32}
-            priority
-          /></li>
-        <li>          
-          <Image
-            // className={styles.logo}
-            src="/twitter.svg"
-            alt="Digital Spaniel"
-            width={39}
-            height={32}
-            priority
-          /></li>
-        <li>          
-          <Image
-            // className={styles.logo}
-            src="/instagram.svg"
-            alt="Digital Spaniel"
-            width={32}
-            height={32}
-            priority
-          /></li>
-        <li>         
-          <Image
-            // className={styles.logo}
-            src="/linkedin.svg"
-            alt="Digital Spaniel"
-            width={33}
-            height={32}
-            priority
-          /></li>
+      <ul className={styles.footer__socials}>
+        <li><a className={styles.footer__social_link} href="#" target="_blank"><FacebookIcon /></a></li>
+        <li><a className={styles.footer__social_link} href="#" target="_blank"><TwitterIcon /></a></li>
+        <li><a className={styles.footer__social_link} href="#" target="_blank"><InstagramIcon /></a></li>
+        <li><a className={styles.footer__social_link} href="#" target="_blank"><LinkedinIcon /></a></li>
       </ul>
     </div>
-    </>
+    </div>
+    </div>
   );
 };
 

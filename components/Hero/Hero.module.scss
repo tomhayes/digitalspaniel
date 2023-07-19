@@ -1,0 +1,62 @@
+@import "/styles/variables.scss";
+@import "/styles/layout.scss";
+.hero__background_holder {
+ position: relative;
+}
+
+.hero__background {
+  position:absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  right:0;
+}
+
+.hero {
+  @include container;
+  display:flex;
+  align-content: center;
+
+  .hero__content {
+    width:50%;
+    padding: 310px 0;
+
+  .hero__inner {
+    max-width: 420px;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    p {
+      margin-top:50px;
+      margin-bottom: 62px;
+    }
+
+    .hero__subheading {
+      color: $pink;
+      text-transform: uppercase;
+      margin-bottom:55px;
+      opacity: 0.75;
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+  }
+}
+
+  .hero__image {
+    position: relative;
+    width:50%;
+    top:0;
+    bottom:0;
+
+    .hero__image__image {
+      object-fit: cover;
+      min-width:100%;
+      min-height:100%;
+      overflow:hidden;
+    }
+  }
+
+}

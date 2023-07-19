@@ -1,0 +1,12 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Make Ideas Happen",
+      "description": "A local paper with big ideas needed A sharp new brand to inspire readers.",
+      "tag": "branding",
+      "photo": "/project-1.png",
+      "link": "#"
+    }
+  ]
+}

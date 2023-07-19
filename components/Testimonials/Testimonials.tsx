@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image'
-import styles from '@/components/Testimonials/Testimonials.module.css'
+import styles from '@/components/Testimonials/Testimonials.module.scss'
 import Title from '../Title/Title';
 
 const Testimonials: React.FC = () => {
