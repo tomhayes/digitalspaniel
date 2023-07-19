@@ -3,9 +3,41 @@
     {
       "id": 1,
       "title": "Make Ideas Happen",
-      "description": "A local paper with big ideas needed A sharp new brand to inspire readers.",
-      "tag": "branding",
-      "photo": "/project-1.png",
+      "description": "A local paper with big ideas needed a sharp new brand to inspire readers.",
+      "tag": "Branding",
+      "photo": "/newspaper.png",
+      "link": "#"
+    },
+    {
+      "id": 2,
+      "title": "Wellies",
+      "description": "A local paper with big ideas needed a sharp new brand to inspire readers.",
+      "tag": "Digital marketing",
+      "photo": "/wellies.png",
+      "link": "#"
+    },
+    {
+      "id": 3,
+      "title": "Mackerel",
+      "description": "A local paper with big ideas needed a sharp new brand to inspire readers.",
+      "tag": "Branding",
+      "photo": "/mackerel.png",
+      "link": "#"
+    },
+    {
+      "id": 4,
+      "title": "Dinamo",
+      "description": "A local paper with big ideas needed a sharp new brand to inspire readers.",
+      "tag": "Web design",
+      "photo": "/dinamo.png",
+      "link": "#"
+    },
+    {
+      "id": 5,
+      "title": "Rider",
+      "description": "A local paper with big ideas needed a sharp new brand to inspire readers.",
+      "tag": "Web design",
+      "photo": "/rider.png",
       "link": "#"
     }
   ]

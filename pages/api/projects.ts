@@ -2,9 +2,9 @@ import { NextApiRequest, NextApiResponse } from 'next';
 import path from 'path';
 import fs from 'fs';
 
-const contentHandler = (req: NextApiRequest, res: NextApiResponse) => {
+const projectsHandler = (req: NextApiRequest, res: NextApiResponse) => {
   try {
-    const filePath = path.join(process.cwd(), 'json/testimonials.json');
+    const filePath = path.join(process.cwd(), 'json/projects.json');
     const fileContent = fs.readFileSync(filePath, 'utf-8');
     const data = JSON.parse(fileContent);
 
@@ -15,4 +15,4 @@ const contentHandler = (req: NextApiRequest, res: NextApiResponse) => {
   }
 };
 
-export default contentHandler;
+export default projectsHandler;

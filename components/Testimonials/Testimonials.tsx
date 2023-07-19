@@ -9,7 +9,7 @@ const Testimonials: React.FC = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('/api/content');
+        const response = await fetch('/api/testimonials');
         const jsonData = await response.json();
         setData(jsonData);
       } catch (error) {
