@@ -23,6 +23,14 @@
       "company": "Design Matters",
       "photo": "/testimonial-3.png",
       "quote": "We needed a creative and unique brand which could compete against established products. Digital Spaniel delivered in spades and we’ve seen a huge response to the product launch."
+    },
+    {
+      "id": 4,
+      "name": "Johnny B. Goode",
+      "jobtitle": "CEO",
+      "company": "Getting Things Done",
+      "photo": "/testimonial-2.png",
+      "quote": "Advice and support from DigiSpan was second to none. Always willing to help and offer advice and solutions. A very good and rapid understanding of our requirements was key to this."
     }
   ]
 }
