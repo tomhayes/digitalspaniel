@@ -27,19 +27,19 @@ const Footer: React.FC = () => {
       <div className={styles.footer__menus__menu}>
         <h3>Explore</h3>
         <ul>
-          <li>Services</li>
-          <li>Work</li>
-          <li>About</li>
-          <li>Blog</li>
-          <li>Careers</li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Work</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Careers</a></li>
         </ul>
       </div>
       <div className={styles.footer__menus__menu}>
         <h3>Services</h3>
         <ul>
-          <li>Brand</li>
-          <li>Development</li>
-          <li>Marketing</li>
+          <li><a href="#">Brand</a></li>
+          <li><a href="#">Development</a></li>
+          <li><a href="#">Marketing</a></li>
         </ul>
       </div>
       <div className={styles.footer__menus__menu}>

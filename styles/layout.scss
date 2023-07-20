@@ -6,3 +6,12 @@
   padding-left:15px;
   padding-right:15px;
 }
+
+@mixin container-xl {
+  margin: 0 auto;
+  width:100%;
+  max-width: 1500px;
+  display:flex;
+  padding-left:15px;
+  padding-right:15px;
+}

@@ -13,6 +13,7 @@ const Hero: React.FC = () => {
             className={styles.hero__background_image}
             src="/spaniel.png"
             alt="Digital Spaniel"
+
             fill={true}
             priority
           />

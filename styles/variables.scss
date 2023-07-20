@@ -2,9 +2,13 @@
 $pink: #C0345E;
 $slate: #506473;
 $lightgray: #EDEFF1;
+$midgray: #C5CACE;
 $gray: #50647380;
+$navy: #19293A;
 $black: #19293A;
 
 //Fonts
 $avant-garde: "itc-avant-garde-gothic-pro", sans-serif;
 $open-sans: 'Open Sans', sans-serif;
+$default-font-size: clamp(16px, 2vw, 21px);
+$default-line-height: 1.8;

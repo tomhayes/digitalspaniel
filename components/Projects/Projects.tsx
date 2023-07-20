@@ -37,14 +37,14 @@ const Projects: React.FC = () => {
     setFadeIn(true);
     setTimeout(() => {
       setFadeIn(false);
-      // Hide previous set of items after a short delay (500ms here, adjust as needed)
+
       setTimeout(() => {
         setData((prevData) => ({
           ...prevData,
           projects: prevData?.projects || [],
         }));
       }, 300);
-    }, 300); // Adjust the delay time to match your CSS transition time
+    }, 300);
   };
 
   return (
@@ -71,11 +71,11 @@ const Projects: React.FC = () => {
             ))}
           </div>
 
-          <div className={styles.project__gallery}>
+          <div className={`${styles.project__gallery} ${fadeIn ? styles.fadeIn : ''}`}>
             {data.projects
               .filter((project: Project) => selectedTag === null || project.tag === selectedTag)
               .map((project: Project) => (
-                <div className={`${styles.project__card} ${fadeIn ? styles.fadeIn : ''}`}
+                <div className={styles.project__card}
                 key={project.id}>
                   <Image
                     src={project.photo}

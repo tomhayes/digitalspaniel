@@ -19,7 +19,13 @@
   grid-column-gap: 30px;
   grid-row-gap: 30px;
   margin-top:65px;
+
+  @media (max-width: 649px) {
+    display:flex;
+    flex-direction:column;
+
   }
+}
   
   .project__card {
     position:relative;
@@ -31,13 +37,20 @@
       &:nth-of-type(3) { grid-area: 1 / 3 / 2 / 4; }
       &:nth-of-type(4) { grid-area: 2 / 1 / 3 / 3; }
       &:nth-of-type(5) { grid-area: 2 / 3 / 3 / 4; }
-      opacity:1;
-      visibility:visible;
-      transition: opacity 0.3s ease, visibility 0s linear 0.3s; /* CSS transition for the fade-in effect */
+
+      @media (max-width: 649px) {
+        width:100%;
+      }
 
   }
 
-  .project__card.fadeIn {
+  .project__gallery {
+    opacity:1;
+    visibility:visible;
+    transition: opacity 0.5s ease, visibility 0s linear 0.5s; /* CSS transition for the fade-in effect */
+  }
+
+  .project__gallery.fadeIn {
     opacity: 0;
     visibility: hidden;
   }
@@ -74,7 +87,10 @@
   margin-bottom:16px;
 }
 
-.project__photo {
+.project__image {
+    object-fit:cover;
+    min-height:100%;
+    min-width:100%;
 
 }
 
@@ -82,19 +98,45 @@
   color: white;
   font-size: 18px;
   line-height: 27px;
+  margin-bottom:16px;
 }
 
 .project__link {
   color: white;
+  display:inline-block;
+  border-bottom: 2px solid white;
+  padding-bottom:2px;
+  font-size:20px;
+  font-weight: 600;
+  transition: all 0.6s ease;
+
+  &:hover {
+    border-bottom:2px solid $pink;
+  }
+}
+
+.tag__buttons {
+  margin-top:40px;
 }
 
 .tag__button {
-  width:190px;
+  width:clamp(150px, 25%, 190px);
   background: transparent;
   border: transparent;
   border-bottom: 1px solid $black;
   padding-bottom: 16px;
+  padding-top:16px;
   position:relative;
+  font-family: $open-sans;
+  font-size:  clamp(14px, 2vw, 20px);
+
+  @media (max-width: 649px) {
+    width:50%;
+  }
+
+  &.active {
+    font-weight:600;
+  }
 
 }
 

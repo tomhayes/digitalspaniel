@@ -2,6 +2,7 @@ import 'react'
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import styles from './Header.module.scss'
+import MobileMenu from '../MobileMenu/MobileMenu';
 
 
 
@@ -72,13 +73,15 @@ const Header: React.FC = () => {
         </div>
 
         <ul className={ styles.nav } >
-          <li>Services</li>
-          <li>Work</li>
-          <li>About</li>
-          <li>Blog</li>
-          <li>Contact</li>
+          <li><a className={styles.nav__menu_link} href="">Services</a></li>
+          <li><a className={styles.nav__menu_link} href="">Work</a></li>
+          <li><a className={styles.nav__menu_link} href="">About</a></li>
+          <li><a className={styles.nav__menu_link} href="">Blog</a></li>
+          <li><a className={styles.nav__menu_link} href="">Contact</a></li>
         </ul>
+        <MobileMenu />
     </div>
+
     </div>
   );
 };

@@ -9,8 +9,6 @@ import About from '@/components/About/About'
 import Footer from '@/components/Footer/Footer'
 import CaseStudies from '@/components/CaseStudies/CaseStudies'
 
-
-
 export default function Home() {
   return (
     <>
@@ -25,8 +23,8 @@ export default function Home() {
         <Hero />
         <Services />
         <Projects />
-        <CaseStudies />
-        <About />
+        {/* <CaseStudies />
+        <About /> */}
         <Testimonials />
         <Footer />
       </main>

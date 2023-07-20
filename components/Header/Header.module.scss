@@ -20,12 +20,20 @@
     .nav li {
       color:black;
     }
+
+    .nav__menu_link::after  {
+      background-color: $pink;
+    }
   }
 
   &.header__unscrolled {
     background:transparent;
     .nav li {
       color:white;
+    }
+
+    .nav__menu_link::after  {
+      background-color: white;
     }
   }
 
@@ -45,6 +53,39 @@
       align-items:center;
       justify-content: space-around;
       gap: 64px;
+
+      .nav__menu_link  {
+          display: inline-block;
+          position: relative;
+          font-size:$default-font-size;
+          font-weight:500;
+        
+        &::after {
+          content: '';
+          position: absolute;
+          width: 100%;
+          transform: scaleX(0);
+          height: 3px;
+          bottom: -3px;
+          left: 0;
+          transform-origin: bottom right;
+          transition: transform 0.25s ease-out;
+        }
+        
+        &:hover::after {
+          transform: scaleX(1);
+          transform-origin: bottom left;
+        }
+      }
+      @media (max-width: 1199px){
+        gap: 32px;
+      }
+
+      @media (max-width: 899px){
+        display:none;
+      }
     }
+
   }
+
 }

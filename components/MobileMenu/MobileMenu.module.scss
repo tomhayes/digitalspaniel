@@ -1,0 +1,80 @@
+@import "styles/variables.scss";
+
+.hamburger_inner, .hamburger_inner::before, .hamburger_inner::after {
+  background-color: $pink!important;
+}
+
+.mobileMenu {
+  position: relative;
+  display:none;
+
+  @media (max-width: 899px){
+    display:flex;
+  }
+}
+
+.hamburger {
+  position: relative;
+  z-index: 999;
+  cursor: pointer;
+  display:none;
+
+  @media (max-width: 899px){
+    display:block;
+  }
+}
+
+.menu__nav {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: $pink;
+  transform: translateX(100%);
+  transition: all 0.6s ease;
+}
+
+.menu__list {
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+}
+
+.menu__item {
+  margin-bottom: 10px;
+  text-align:center;
+
+}
+
+.menu__link {
+  text-decoration: none;
+  color: white; /* Adjust the text color to your preference */
+  font-family:$avant-garde;
+  font-size: clamp(24px, 4vw, 48px);
+  line-height: 1.8;
+  font-weight:500;
+  display: inline-block;
+  position: relative;
+
+  &::after {
+    content: '';
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: -3px;
+    left: 0;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  &:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+}

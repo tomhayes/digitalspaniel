@@ -38,7 +38,55 @@ a {
 }
 
 p {
-  font-size: 21px;
-  line-height:38px;
+  font-size: $default-font-size;
+  line-height:$default-line-height;
   color: $slate;
 }
+
+.hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after {
+  background-color: white!important;
+}
+
+.menu__nav.is-active {
+  transform: translateX(0);
+
+}
+
+.slick-slider {
+
+  .slick-dots li, .slick-dots li button {
+    width: 36px;
+    height:36px;
+    display:flex;
+    justify-content:center;
+    justify-items:center;
+  }
+
+.slick-dots li button:before {
+  font-size: 24px;
+  width:24px;
+  color: $lightgray;
+  opacity:1;
+  position:relative;
+}
+
+.slick-dots li.slick-active button:before {
+  font-size:36px;
+  width:36px;
+  color: $navy;
+  opacity:1;
+
+}
+
+.slick-dots {
+  display: flex!important;
+  margin: auto;
+  position: relative;
+  width: auto;
+  justify-content: center;
+  gap:30px;
+  bottom:-55px;
+}
+
+}
+
